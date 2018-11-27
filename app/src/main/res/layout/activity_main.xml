@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+            android:padding="1dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:text="@string/bt_add_person"
+                android:id="@+id/btAddPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btChooseRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bt_choose_room" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btChoosePerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bt_choose_person" />
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:id="@+id/rooms"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <FrameLayout
+                       android:background="@drawable/room_pool"
+                       android:layout_width="@dimen/width_avatar_room"
+                       android:layout_height="@dimen/height_avatar_room"
+                       android:layout_margin="@dimen/margin_avatar_room">
+                     <LinearLayout
+                android:layout_gravity="top"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_avatar_person">
+                <ImageView
+                    android:src="@drawable/mother5"
+                    android:layout_width="@dimen/width_avatar_person"
+                    android:layout_height="@dimen/height_avatar_person" />
+                <ImageView
+                    android:src="@drawable/mother5"
+                    android:layout_width="@dimen/width_avatar_person"
+                    android:layout_height="@dimen/height_avatar_person" />
+                <ImageView
+                    android:src="@drawable/mother5"
+                    android:layout_width="@dimen/width_avatar_person"
+                    android:layout_height="@dimen/height_avatar_person" />
+                <ImageView
+                    android:src="@drawable/mother5"
+                    android:layout_width="@dimen/width_avatar_person"
+                    android:layout_height="@dimen/height_avatar_person" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/room_balcon"
+            android:layout_width="@dimen/width_avatar_room"
+            android:layout_height="@dimen/height_avatar_room"
+            android:layout_margin="@dimen/margin_avatar_room">
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/room_kitchen"
+            android:layout_width="@dimen/width_avatar_room"
+            android:layout_height="@dimen/height_avatar_room"
+            android:layout_margin="@dimen/margin_avatar_room">
+        </FrameLayout>
+        <FrameLayout
+            android:background="@drawable/room_bathroom"
+            android:layout_width="@dimen/width_avatar_room"
+            android:layout_height="@dimen/height_avatar_room"
+            android:layout_margin="@dimen/margin_avatar_room">
+        </FrameLayout>
+
+
+                 <FrameLayout
+                     android:background="@drawable/room_mother"
+                     android:layout_width="@dimen/width_avatar_room"
+                     android:layout_height="@dimen/height_avatar_room"
+                     android:layout_margin="@dimen/margin_avatar_room">
+                 </FrameLayout>
+                 <FrameLayout
+                     android:background="@drawable/room_old_sis"
+                     android:layout_width="@dimen/width_avatar_room"
+                     android:layout_height="@dimen/height_avatar_room"
+                     android:layout_margin="@dimen/margin_avatar_room">
+                 </FrameLayout>
+                 <FrameLayout
+                     android:background="@drawable/room_br"
+                     android:layout_width="@dimen/width_avatar_room"
+                     android:layout_height="@dimen/height_avatar_room"
+                     android:layout_margin="@dimen/margin_avatar_room">
+                 </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</HorizontalScrollView>
+
+
+
+</LinearLayout>
